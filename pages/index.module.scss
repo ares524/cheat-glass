@@ -1,0 +1,74 @@
+@import "../styles/app";
+
+.stroke {
+  border: 5px solid theme-color("primary");
+  width: 64px;
+  border-radius: 30px;
+}
+
+.backgroundImage {
+  background-image: url('../public/images/e-commerce/login/bg.svg');
+  background-size: cover;
+}
+
+.button {
+  padding: 14px 70px!important;
+  @media (max-width: 1280px) {
+    padding: 14px 37px!important;
+  }
+}
+
+.formGroup {
+  position: relative;
+}
+
+.viewPassword {
+  cursor: pointer;
+  position: absolute;
+  right: 8px;
+  top: 36px;
+}
+
+.footer {
+  margin-top: 180px;
+
+  & > a {
+    margin-right: 15px;
+  }
+}
+
+.viewMoreBtn {
+  & > * {
+    z-index: 1;
+  }
+  &::after {
+    z-index: 0 !important;
+  }
+  .arrowRight {
+    background: url("../public/images/e-commerce/home/arrow-right.svg");
+    width: 24px;
+    height: 24px;
+    position: relative;
+    transition: left 0.25s ease;
+    left: 0px;
+  }
+  .arrowLeft {
+    background: url("../public/images/e-commerce/home/arrow-left.svg");
+    width: 24px;
+    height: 24px;
+    position: relative;
+    transition: left 0.25s ease;
+    left: 0px;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    .arrowRight {
+      left: 8px;
+      background: url("../public/images/e-commerce/home/arrow-right-hover.svg");
+    }
+    .arrowLeft {
+      left: 3px;
+    }
+  }
+}

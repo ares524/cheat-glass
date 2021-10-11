@@ -1,0 +1,167 @@
+#root {
+  --sidebar-item-active-color: #bd744c;
+  --sidebar-item-default-color: #262626;
+  --important-notification-color: #f55d5d;
+  --badge-item: #ffffff;
+  --update-notification-color: #fd5f00;
+  --primary-color: #bd744c;
+  .sing-dashboard,
+  .dashboard-light {
+    --logo-color: #6c757d;
+    --sidebar-bg-color: #ffffff;
+    --sidebar-color: #6c757d;
+    --sidebar-action-bg: #f9fafe;
+    --sidebar-item-active-color: #bd744c;
+    --sidebar-item-default-color: #262626;
+    --sidebar-nav-title-color: #0e1113;
+
+    --widget-shadow-color: 153, 187, 221;
+
+    --navbar-bg: #f9fbfd; // $body-bg
+    --navbar-shadow: none;
+  }
+
+  .dashboard-dark {
+    --logo-color: $white;
+
+    --sidebar-bg-color: #002b49;
+    --sidebar-color: #f6f6e9;
+    --sidebar-action-bg: #042338;
+    --sidebar-item-active-color: #bd744c;
+    --sidebar-item-default-color: #262626;
+    --sidebar-nav-title-color: #0e1113;
+    --sidebar-nav-title-color: #dedede;
+
+    --widget-shadow-color: 115, 162, 208;
+
+    --navbar-bg: $white;
+    --navbar-shadow: 0 15px 20px -20px rgba(var(--widget-shadow-color), 0.1),
+      0 0 15px rgba(var(--widget-shadow-color), 0.06);
+  }
+
+  .dashboard-sea {
+    --logo-color: $white;
+    --sidebar-item-active: #f6f6e9;
+    --sidebar-bg-color: #004472;
+    --sidebar-color: #f6f6e9;
+    --sidebar-action-bg: #00395f;
+
+    --sidebar-nav-title-color: #dedede;
+
+    --widget-shadow-color: 115, 162, 208;
+
+    --navbar-bg: $white;
+    --navbar-shadow: 0 15px 20px -20px rgba(var(--widget-shadow-color), 0.1),
+      0 0 15px rgba(var(--widget-shadow-color), 0.06);
+  }
+
+  .dashboard-sky {
+    --logo-color: $white;
+    --sidebar-item-active: #004472;
+    --sidebar-bg-color: #e9ebef;
+    --sidebar-color: #004472;
+    --sidebar-action-bg: #dbdee4;
+
+    --sidebar-nav-title-color: #004472;
+
+    --widget-shadow-color: 115, 162, 208;
+
+    --navbar-bg: $white;
+    --navbar-shadow: 0 15px 20px -20px rgba(var(--widget-shadow-color), 0.1),
+      0 0 15px rgba(var(--widget-shadow-color), 0.06);
+  }
+
+  .dashboard-wave {
+    --logo-color: $white;
+    --sidebar-item-active: #004472;
+    --sidebar-bg-color: #d1e7f5;
+    --sidebar-color: #004472;
+    --sidebar-action-bg: #beddf2;
+
+    --sidebar-nav-title-color: #004472;
+
+    --widget-shadow-color: 115, 162, 208;
+
+    --navbar-bg: $white;
+    --navbar-shadow: 0 15px 20px -20px rgba(var(--widget-shadow-color), 0.1),
+      0 0 15px rgba(var(--widget-shadow-color), 0.06);
+  }
+
+  .dashboard-rain {
+    --logo-color: $white;
+    --sidebar-item-active: #004472;
+    --sidebar-bg-color: #ccdde9;
+    --sidebar-color: #004472;
+    --sidebar-action-bg: #bacedc;
+
+    --sidebar-nav-title-color: #004472;
+
+    --widget-shadow-color: 115, 162, 208;
+
+    --navbar-bg: $white;
+    --navbar-shadow: 0 15px 20px -20px rgba(var(--widget-shadow-color), 0.1),
+      0 0 15px rgba(var(--widget-shadow-color), 0.06);
+  }
+
+  .dashboard-middle {
+    --logo-color: $white;
+    --sidebar-item-active: #004472;
+    --sidebar-bg-color: #d7dfe6;
+    --sidebar-color: #004472;
+    --sidebar-action-bg: #bdc9d4;
+
+    --sidebar-nav-title-color: #004472;
+
+    --widget-shadow-color: 115, 162, 208;
+
+    --navbar-bg: $white;
+    --navbar-shadow: 0 15px 20px -20px rgba(var(--widget-shadow-color), 0.1),
+      0 0 15px rgba(var(--widget-shadow-color), 0.06);
+  }
+
+  .dashboard-black {
+    --logo-color: $white;
+    --sidebar-item-active: #f6f6e9;
+    --sidebar-bg-color: #13191d;
+    --sidebar-color: #f6f6e9;
+    --sidebar-action-bg: #080d0f;
+    --sidebar-nav-title-color: #f6f6e9;
+
+    --widget-shadow-color: 115, 162, 208;
+
+    --navbar-bg: $white;
+    --navbar-shadow: 0 15px 20px -20px rgba(var(--widget-shadow-color), 0.1),
+      0 0 15px rgba(var(--widget-shadow-color), 0.06);
+  }
+
+  .dashboard-salat {
+    --logo-color: $white;
+    --sidebar-item-active: #f6f6e9;
+    --important-notification-color: #fd5f00;
+    --sidebar-bg-color: #20ae8c;
+    --sidebar-color: #f6f6e9;
+    --sidebar-action-bg: #119475;
+    --update-notification-color: #004472;
+    --sidebar-nav-title-color: #dedede;
+
+    --widget-shadow-color: 115, 162, 208;
+
+    --navbar-bg: $white;
+    --navbar-shadow: 0 15px 20px -20px rgba(var(--widget-shadow-color), 0.1),
+      0 0 15px rgba(var(--widget-shadow-color), 0.06);
+  }
+
+  // dependable variables
+  .sing-dashboard {
+    --badge-item-color: var(--badge-item);
+    --important-notification: var(--important-notification-color);
+    --update-notification: var(--update-notification-color);
+    --sidebar-item-active-color: var(--sidebar-item-active);
+    --sidebar-item-default-color: var(--sidebar-item-default);
+    --chat-sidebar-bg-color: var(--sidebar-bg-color);
+    --sidebar-progress-bg-color: var(--sidebar-action-bg);
+    --sidebar-item-hover-bg-color: var(--sidebar-action-bg);
+    --widget-shadow: 0 23px 20px -20px rgba(var(--widget-shadow-color), 0.1),
+      0 0 15px rgba(var(--widget-shadow-color), 0.06);
+  }
+}

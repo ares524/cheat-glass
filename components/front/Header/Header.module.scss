@@ -1,0 +1,146 @@
+@import "styles/app";
+
+.header {
+  background-color: $black;
+  box-shadow: 0px 4px 20px rgba(38, 38, 38, 0.1);
+  display: flex;
+  justify-content: space-between;
+  position: fixed !important;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  margin-bottom: 32px;
+}
+
+.logoStyle {
+  color: $white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.15rem;
+  & > i {
+    font-style: normal;
+    color: theme-color("primary");
+  }
+}
+
+// -------------------
+
+.nav__menuItem:hover {
+  .nav__submenu {
+    display: block;
+  }
+}
+
+
+.nav {
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.nav {
+  display: inline-block;
+
+
+  a, span {
+    color: $gray-800;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    line-height: inherit;
+    cursor: pointer;
+  }
+}
+
+.nav__menu {
+  line-height: 45px;
+}
+.dropdownItem {
+  margin: 7px 0;
+  &Img {
+    background: url("../../../public/images/e-commerce/header/chevron-down.svg") no-repeat center;
+    width: 24px;
+    height: 24px;
+  }
+}
+.nav__menuItem {
+  display: inline-block;
+  position: relative;
+  &::before {
+    content: '';
+    width: 14px;
+    height: 2px;
+    border-radius: 4px;
+    background-color: theme-color("primary");
+    position: absolute;
+    top: calc(50% - 2px);
+    left: -20px;
+    opacity: 0;
+    transition: all .35s ease;
+  }
+  &:hover, &:focus {
+    .dropdownItem, .navLink {
+      color: theme-color("primary");
+    }
+    .dropdownItemImg {
+      background: url("../../../public/images/e-commerce/header/chevron-down-active.svg") no-repeat center;
+      width: 24px;
+      height: 24px;
+    }
+    &::before {
+      opacity: 1;
+      left: -1px;
+    }
+
+    .nav__submenu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0px);
+      background-color: #fff;
+      .nav__submenuItem {
+        transform: translateX(0px);
+      }
+    }
+  }
+}
+
+.dropdownMenuItem {
+  background-color: transparent !important;
+  padding: 6px 24px;
+  &:hover, &:focus {
+    color: theme-color("primary") !important;
+    font-weight: bold;
+  }
+  & > a {
+    padding: 0;
+  }
+}
+
+.nav__submenu {
+  font-weight: 300;
+  text-transform: none;
+  transition: all .35s ease;
+  transform: translateY(40px);
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  border: 1px solid #E9E9E9;
+  top: 60px;
+  width: 200px;
+  background-color: #fff;
+
+  .navLink {
+    padding: 0;
+  }
+}
+
+.nav__submenuItem {
+  transition: all .35s ease;
+  transform: translateX(-20px);
+  &:hover {
+    background: rgba(#000, 0.1);
+  }
+}
